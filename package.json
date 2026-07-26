@@ -1,0 +1,14 @@
+{
+  "name": "psss-functions",
+  "version": "0.1.0",
+  "private": true,
+  "main": "index.js",
+  "engines": {"node": "20"},
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
+    "firebase-admin": "^13.0.2",
+    "firebase-functions": "^6.3.2"
+  }
+}
