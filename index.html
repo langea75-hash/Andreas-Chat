@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#111111">
+  <title>Psss🤫</title>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app">
+    <header class="brand">
+      <div class="logo">🤫</div>
+      <h1>Psss</h1>
+    </header>
+
+    <section id="authView" class="card">
+      <div class="tabs">
+        <button id="loginTab" class="tab active">Anmelden</button>
+        <button id="registerTab" class="tab">Registrieren</button>
+      </div>
+
+      <form id="loginForm" class="form">
+        <label>Benutzername<input id="loginUsername" required></label>
+        <label>PIN<input id="loginPin" type="password" inputmode="numeric" minlength="4" maxlength="8" required></label>
+        <button class="primary">Anmelden</button>
+      </form>
+
+      <form id="registerForm" class="form hidden">
+        <label>Dein Name<input id="displayName" maxlength="40" required></label>
+        <label>Benutzername<input id="registerUsername" minlength="3" maxlength="20" required></label>
+        <label>PIN<input id="registerPin" type="password" inputmode="numeric" minlength="4" maxlength="8" required></label>
+        <label>Einladungscode<input id="inviteCode" maxlength="30" required></label>
+        <button class="primary">Mit Einladung registrieren</button>
+      </form>
+
+      <p id="message" class="message"></p>
+    </section>
+
+    <section id="homeView" class="hidden">
+      <div class="card welcome">
+        <div>
+          <p class="small">Angemeldet</p>
+          <h2 id="welcomeName">Hallo</h2>
+          <p id="welcomeUsername"></p>
+        </div>
+        <button id="logoutButton" class="secondary">Abmelden</button>
+      </div>
+
+      <div class="grid">
+        <button class="feature" disabled><span>💬</span><strong>Chats</strong><small>Version 0.3</small></button>
+        <button class="feature" disabled><span>👥</span><strong>Freunde</strong><small>Version 0.2</small></button>
+        <button class="feature" disabled><span>👤</span><strong>Profil</strong><small>In Vorbereitung</small></button>
+        <button class="feature" disabled><span>⚙️</span><strong>Einstellungen</strong><small>In Vorbereitung</small></button>
+      </div>
+    </section>
+  </main>
+  <script type="module" src="app.js"></script>
+</body>
+</html>
