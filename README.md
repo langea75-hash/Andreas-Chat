@@ -1,36 +1,13 @@
-# Psss🤫 Version 0.1
+# Psss 🤫 Version 0.2
 
-Enthalten:
-- Anmeldung ohne E-Mail
-- Benutzername und PIN
-- Registrierung nur mit Einladungscode
-- Firebase Authentication
-- Firestore
-- Startseite nach Anmeldung
+Installierbarer GitHub-Pages-Prototyp mit Anmeldung, Einladungscode, Freunden, Einzelchat, Status, Dunkelmodus und PWA.
 
-Noch nicht enthalten:
-- Freunde
-- echte Chats
-- Bilder
-- Push-Nachrichten
+**Testcode:** `PSSS-2026`
 
-## Firebase einrichten
+## Installation auf GitHub
+1. ZIP entpacken.
+2. Alle Dateien in das Hauptverzeichnis des Repositorys hochladen.
+3. GitHub: Settings → Pages → Deploy from a branch → main → /(root).
 
-1. Firebase-Projekt erstellen.
-2. Authentication aktivieren.
-3. Firestore-Datenbank erstellen.
-4. Web-App im Firebase-Projekt anlegen.
-5. Werte in `public/app.js` bei `firebaseConfig` eintragen.
-6. Projekt-ID in `.firebaserc` eintragen.
-7. Im Ordner `functions`: `npm install`
-8. Firebase CLI: `npm install -g firebase-tools`
-9. Anmelden: `firebase login`
-10. Veröffentlichen: `firebase deploy --only firestore:rules,functions,hosting`
-
-## Ersten Einladungscode erstellen
-
-Firestore-Collection: `invites`
-
-Dokument-ID: `PSSS-START-01`
-
-Feld: `used` = `false`
+## Wichtig
+Dies ist ein lokaler Prototyp. Konten und Nachrichten bleiben nur im Browser. Noch keine Synchronisierung, kein echter Server und keine Ende-zu-Ende-Verschlüsselung. Die PIN-Speicherung ist nur für den Testbetrieb gedacht.
